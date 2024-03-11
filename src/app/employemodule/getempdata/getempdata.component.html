@@ -1,0 +1,24 @@
+<div>
+    <table>
+        <tr>
+            <th>EmpId</th>
+            <th>empName</th>
+            <th>empCode</th>
+            <th>empEmailId</th>
+            <th>empDesignation</th>
+            <th>role</th>
+            <th>mobile</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let empdata of  EmpData">
+            <td>{{empdata.empId}}</td>
+            <td>{{empdata.empName}}</td>
+            <td>{{empdata.empCode}}</td>
+            <td>{{empdata.empEmailId}}</td>
+            <td>{{empdata.empDesignation}}</td>
+            <td>{{empdata.role}}</td>
+            <td>{{empdata.mobile}}</td>
+            <td><button (click)="gotoemployedetails(empdata.empId)">showempdetail</button></td>
+        </tr>
+    </table>
+</div>

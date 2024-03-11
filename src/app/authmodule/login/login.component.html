@@ -1,0 +1,27 @@
+<div class="login-container">
+    <div class="loginform">
+        <h3 style='text-align:center;padding-top:20px;'>Login Form</h3>
+          <form action="">
+            <div class="user">
+                <div class="label">
+                  <label for="uname">username</label>
+                </div>
+                <div class="text">
+                    <input type="text" placeholder="username" id="uname">
+                </div>
+            </div>
+            <div class="password">
+                <div class="label">
+                    <label for="pass">password</label>
+                </div>
+                <div class="text">
+                   <input type="text" placeholder="password" id="pass">
+                </div>
+            </div>
+            <div>
+                <button style="margin-right:10px;" (click)="gotodashboard()">Login</button>
+                <button (click)="gobacktohome()">Back</button>
+            </div>
+          </form>
+    </div>
+</div>

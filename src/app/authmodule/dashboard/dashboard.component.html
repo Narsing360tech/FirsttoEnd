@@ -1,0 +1,18 @@
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>UserId</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let a of data">
+            <td>{{a.id}}</td>
+            <td>{{a.title}}</td>
+            <td>{{a.userId}}</td>
+            <td>{{a.completed}}</td>
+            <td><button (click)="gotoshowdata(a.id)">Showdata</button></td>
+        </tr>
+    </table>
+</div>
